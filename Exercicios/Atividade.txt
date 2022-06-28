@@ -1,0 +1,21 @@
+RF01 O jogadorUsuario deve usar pokebolas para capturar Pokemons
+RF02 Pokemons deve resistir a captura do jogadorUsuario mediante seu nivel
+RF03 o jogadorUsuario deve desafiar um Pokemon
+RF04 o jogador Usuario deve escolher qual ataque irá usar do seu Pokemon
+RF05 o Pokemon atacado deve escolher um ataque para revidar ao jogadorUsuario
+
+jogadorUsario --> Pokebolas ---> capturar pokemon.
+
+jogadorUsuario ----> escolher ataque ----> atacar pokemon
+
+Pokemons ----> defender ataque ----> contra atacar.
+
+Pokemons		Métodos/Comportamentos		Evolução
+Level: Int		Correr(pokemon): void		Primária: String
+Hp: Int			Contraatacar(pokemon): void	Secundária: String	
+Nome: String		Descansar(pokemon): void	Terciária: String
+Status: String		Dormir(pokemon): void		Unica: String
+Tipo: Strig		Caçar(pokemon):void
+Elemento: String	
+Skills: String
+

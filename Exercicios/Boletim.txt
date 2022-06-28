@@ -1,0 +1,42 @@
+package boletim;
+
+import java.util.Scanner;
+public class pessoaAluno {
+
+	public static void main(String[] args) {
+		
+		Scanner ler = new Scanner (System.in);
+		Aluno pessoa1 = new Aluno ();
+		System.out.println ("Digite seu nome");
+		pessoa1.nome = ler.nextLine();
+		System.out.println ("Digite sua primeira nota");
+		pessoa1.nota1 = ler.nextFloat();
+		System.out.println ("Digite sua segunda nota");
+		pessoa1.nota2 = ler.nextFloat();
+		System.out.println ("Digite sua terceira nota");
+		pessoa1.nota3 = ler.nextFloat();
+		pessoa1.Aluno ();
+	}
+}
+
+package boletim;
+
+public class Aluno {
+	
+	String nome;
+	String signo;
+	float nota1;
+	float nota2;
+	float nota3;
+
+	
+	public void Aluno() {
+		float media = ((nota1+nota2+nota3)/3);
+		System.out.println (nome+ ", Sua média foi "+ media);
+		if (media >= 7) {
+			System.out.println ("Aprovado, boas férias !!");
+		} else {
+			System.out.println ("Reprovado");
+		}	
+	}
+}
